@@ -7,6 +7,7 @@ function Main(){
         const formData = new FormData(event.currentTarget);
         const newIngredient = formData.get("ingredient");
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
+        event.currentTarget.reset()
     }
     let ingredientListElements = ingredients.map(ingredient => {
         return <li key={ingredient}>{ingredient}</li>
