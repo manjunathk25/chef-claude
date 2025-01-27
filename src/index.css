@@ -44,6 +44,7 @@ main{
     flex-grow: 1;
     min-width: 150px;
     max-width: 500px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 .add-ingredient-form > input::placeholder{
     font-size: 1rem;
@@ -61,4 +62,13 @@ main{
 .add-ingredient-form > button::before{
     content: "+";
     margin-right: 4px;
+}
+.ingredients-list{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 450px;
+}
+.ingredients-list > li{
+    font-size: 1rem;
+    padding: 2px;
 }
