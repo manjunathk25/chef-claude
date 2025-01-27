@@ -18,9 +18,19 @@ function Main(){
                 <input type="text" name="ingredient" aria-label="add ingredient" placeholder="e.g. oregano" />
                 <button>Add ingredient</button>
             </form>
-            <ul className="ingredients-list">
-                {ingredientListElements}
-            </ul>
+            {ingredients.length > 0 &&
+                <section>
+                    <h2 className="ingredients-heading">Ingredients on hand:</h2>
+                    <ul className="ingredients-list">{ingredientListElements}</ul>
+                    <div className="get-recipe-container">
+                        <div>
+                            <h3>Ready for a recipe?</h3>
+                            <p>Generate a recipe from your list of ingredients.</p>
+                        </div>
+                        <button>Get a recipe</button>
+                    </div>
+                </section>
+            }       
         </main>
     )
 }

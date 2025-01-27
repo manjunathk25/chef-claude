@@ -66,9 +66,39 @@ main{
 .ingredients-list{
     display: flex;
     flex-direction: column;
-    padding: 20px 450px;
 }
 .ingredients-list > li{
     font-size: 1rem;
     padding: 2px;
+    margin-left: 30px;
+}
+.ingredients-heading{
+    margin: 10px 0;
+}
+.get-recipe-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F0EFEB;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.get-recipe-container h3{
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.get-recipe-container p{
+    font-size: 0.875rem;
+    color: #6B7280;
+}
+.get-recipe-container button{
+    border: none;
+    border-radius: 6px;
+    background: #D17557;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FAFAF8;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
 }
