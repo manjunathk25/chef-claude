@@ -67,7 +67,9 @@ main{
     display: flex;
     flex-direction: column;
 }
-.ingredients-list > li{
+.ingredients-list > li,
+.ingredients-quantity > li,
+.instructions > li{
     font-size: 1rem;
     padding: 2px;
     margin-left: 30px;
@@ -101,4 +103,12 @@ main{
     padding: 8px 16px;
     font-size: 1rem;
     cursor: pointer;
+}
+/* generated recipe article */
+.recipe-heading{
+    margin: 16px 0 10px 0;
+}
+.ingredients-quantity,
+.instructions{
+    margin: 8px 0 16px 0;
 }
